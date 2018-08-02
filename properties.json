@@ -1,0 +1,17 @@
+{
+	"address":"127.0.0.1",
+	"ports":["8080"],
+	"main_dir":"/home/marcosibushak/IB_Sincronizador",
+	"netsuite":{
+		"account":"4140678",
+		"email":"mauricio@ibushak.com",
+		"signature":"ilovE1bushak",
+		"role":"3"
+	},
+	"data_base":{
+		"host":"localhost",
+		"user":"root",
+		"password":"M@rcos23542",
+		"database_name":"Sincronizador"
+	}
+}

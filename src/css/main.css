@@ -1,0 +1,67 @@
+body{
+  background-image: url("/images/backgroundopac.png");
+}
+.nav_style{
+  background-color: #3D465B;
+}
+.name{
+  font-size: 15vh;
+}
+.img-logo{
+  width: 102px !important;
+  height: 35px;
+}
+.logo-login{
+  width: 100%;
+  margin-top: 5%;
+}
+.style-user{
+  height: 15px;
+  font-size: 10px;
+  margin-top: 0;
+}
+.margin-bottom{
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.content-form-login{
+  min-height: 60vh;
+}
+.form-login{
+  background-color: rgba(42, 39, 43, 0.28);
+  border-bottom: 3px gray solid
+  padding: 50vh;
+}
+button{
+  margin-top: 35px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  /* background-color: rgba(143,194,133, 0.59); */
+  color: black;
+  font-weight: 600;
+}
+/* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #000;
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+/* label focus color */
+ .input-field input:focus + label {
+   color: green !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid black !important;
+   box-shadow: 0 1px 0 0 black !important
+ }
+ a:hover{
+   font-weight: 600;
+   text-decoration: underline;
+ }
+.img-logo-modal{
+  width: 150px !important;
+}
