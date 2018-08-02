@@ -1,6 +1,6 @@
 {
 	"address":"127.0.0.1",
-	"ports":["8080"],
+	"ports":["8081"],
 	"main_dir":"/home/marcosibushak/IB_Sincronizador",
 	"netsuite":{
 		"account":"4140678",
