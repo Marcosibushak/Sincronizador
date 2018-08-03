@@ -244,12 +244,16 @@ if __name__ == '__main__':
         if len(properties['ports'])==2:
             server = _cpserver.Server()
             server.socket_host = '0.0.0.0'
-            server.socket_port = properties['ports'][1]
+            server.socket_port = int(properties['ports'][1])
             server.subscribe()
         if len(properties['ports'])==3:
+            server = _cpserver.Server()
+            server.socket_host = '0.0.0.0'
+            server.socket_port = int(properties['ports'][1])
+            server.subscribe()
             server1 = _cpserver.Server()
             server1.socket_host = '0.0.0.0'
-            server1.socket_port = properties['ports'][2]
+            server1.socket_port = int(properties['ports'][2])
             server1.subscribe()
     # Configurando el puerto por default
     cherrypy.config.update({'server.socket_host': '0.0.0.0', 'server.socket_port': int(Puerto),'server.thread_pool': 5000,'server.socket_queue_size': 5000,'response.timeout':1000000000000000,})
