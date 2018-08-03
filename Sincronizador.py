@@ -260,7 +260,7 @@ if __name__ == '__main__':
     cherrypy.tree.mount(home, '/',config={
         '/favicon.ico':{
             'tools.staticfile.on': True,
-            'tools.staticfile.filename': '/home/marcosibushak/images/favicon.ico'
+            'tools.staticfile.filename': str(main_dir)+'/src/assets/images/favicon.ico'
         },
         '/': {
             'tools.sessions.on': True,
