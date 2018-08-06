@@ -1,8 +1,31 @@
+/* Estilo de autocompletado */
+
+@-webkit-keyframes autofill {
+    to {
+        color: green;
+        background: rgba(255, 255, 255, 0.6);
+    }
+}
+::placeholder{
+  color: black;
+}
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
 body{
   background-image: url("/images/backgroundopac.png");
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
 }
-.nav_style{
-  background-color: #3D465B;
+.nav_style, footer{
+  background-color: #3D465B !important;
+}
+footer{
+  margin-bottom: 0;
+  padding: 2px;
 }
 .name{
   font-size: 15vh;
@@ -31,9 +54,9 @@ body{
   background-color: rgba(42, 39, 43, 0.28);
   border-bottom: 3px gray solid
   padding: 50vh;
+  padding-top: 30px !important;
 }
-button{
-  margin-top: 35px;
+.buttons{
   margin-bottom: 15px;
   border-radius: 5px;
   /* background-color: rgba(143,194,133, 0.59); */
@@ -64,4 +87,17 @@ button{
  }
 .img-logo-modal{
   width: 150px !important;
+}
+.modal-lg{
+  width: 40% !important;
+  margin-left: 30%;
+}
+.margin-none{
+  margin: 0 !important;
+}
+.btn{
+  background-color: #3D465B !important;
+}
+main {
+    flex: 1 0 auto;
 }

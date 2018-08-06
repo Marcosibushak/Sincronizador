@@ -13,54 +13,131 @@
 	  <title>Ibushak S.A de C.V</title>
 	</head>
 	<body>
-		<div class="row">PRUEBA</div>
-    <div class="row">
-      <!-- nav Structure -->
-      <div class="col s12 nav_style valign-wrapper">
-        <img class="col s1 img-responsive img-logo" src="/images/ibushak-LOGO.png" alt=""><p class="white-text">Sincronizador</p>
-        <div class="col s2 offset-s9"><a href="#!"  data-activates="slide-out"  class="button-collapse brand-logo right white-text menu-lapse"><i class="small material-icons">dehaze</i></a></div>
-      </div>
-      <!-- nav side Structure-->
-      <ul id="slide-out" class="side-nav">
-      <li class="margin-bottom"><div class="user-view">
-        <div class="background">
-          <img src="/images/backgroundopac.png">
-        </div>
-        <img class="circle" src="/images/personitas.png">
-          <ul>
-          <li class="black-text name">Marcos Ibushak</li>
-          <li class="style-user">marcos@ibushak.com</li>
-          <li class="style-user">Super Admin</li>
-        </ul>
-      </div></li>
-      <li><a href="views/upload.html"><i class="material-icons">file_upload</i>Cargar archivos</a></li>
-      <li><a href="views/status.html"><i class="material-icons">timelapse</i>Estado de cargas</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader black-text">Cuenta</a></li>
-      <li><a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons">lock_outline</i>Cambiar contraseña</a></li>
-      <li><a class="waves-effect" href="views/login.html"><i class="material-icons">person_pin</i>Logout</a></li>
-    </ul>
-    <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Cambia tu contraseña</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
+		<main class="margin-none">
+			<div class="row margin-none">
+				<!-- nav Structure -->
+				<div class="col s12 nav_style valign-wrapper">
+					<img class="col s1 img-responsive img-logo" src="/images/ibushak-LOGO.png" alt=""><p class="white-text">Sincronizador</p>
+					<div class="col s2 offset-s9"><a href="#!"  data-activates="slide-out"  class="button-collapse brand-logo right white-text menu-lapse"><i class="small material-icons">dehaze</i></a></div>
+				</div>
+				<!-- termina nav structure -->
 
-  	  <!-- <div class="container">
-  	  	<div class="row">
-  			</div>
-  	  </div> -->
-    </div>
+				<!-- nav side Structure-->
+				<ul id="slide-out" class="side-nav">
+					<li class="margin-bottom">
+						<div class="user-view">
+							<div class="background">
+								<img src="/images/backgroundopac.png">
+							</div>
+							<img class="circle" src="/images/personitas.png">
+							<ul>
+									<li class="black-text name">Marcos Ibushak</li>
+									<li class="style-user">marcos@ibushak.com</li>
+									<li class="style-user">Super Admin</li>
+					  		</ul>
+						</div>
+					</li>
+					<li><a href="views/upload.html"><i class="material-icons">file_upload</i>Cargar archivos</a></li>
+					<li><a href="views/status.html"><i class="material-icons">timelapse</i>Estado de cargas</a></li>
+					<li><div class="divider"></div></li>
+					<li><a class="subheader black-text">Cuenta</a></li>
+					<li><a class="waves-effect waves-light modal-trigger" href="#modal3"><i class="material-icons">lock_outline</i>Cambiar contraseña</a></li>
+					<li><a class="waves-effect" href="views/login.html"><i class="material-icons">person_pin</i>Logout</a></li>
+				</ul>
+				<!-- termina sidenav -->
 
-	  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="/js/app.js">
+				<!-- logo principal -->
+				<div class="row margin-none">
+					<div class="col s2 offset-s5">
+						<img class="logo-login" src="/images/ibushak-LOGO.png" alt="">
+					</div>
+				</div>
+				<div class="row center">
+					<h5 class="green-text text-darken-2">Título principal para la carga de archivos</h5>
+				</div>
+				<!-- termina logo principal -->
 
-    </script>
-	</body>
+				<!-- subir archivos -->
+				<div class="row">
+					<div class="col s4 offset-s4">
+						<form action="#">
+							 <div class="file-field input-field">
+								 <div class="white-text btn buttons pulse valign-wrapper tooltipped" data-position="bottom" data-delay="10" data-tooltip="Subir archivo">
+									 <i class="large material-icons">file_upload</i>
+									 <input type="file">
+								 </div>
+								 <div class="file-path-wrapper">
+									 <input class="file-path validate" type="text">
+								 </div>
+								 <p>texto <a href="!#">Link</a></p>
+							 </div>
+							 <input class="buttons center col offset-s5 gray" type="submit" name="action" value="Cargar archivo">
+						 </form>
+					</div>
+				</div>
+				<!-- termina subir archivos -->
+
+				<!-- Modal Structure -->
+				<div id="modal3" class="modal-lg modal blue-grey lighten-4">
+				<div class="modal-content">
+						<div class="row valign-wrapper">
+							<img class="col s1 img-responsive img-logo" src="/images/ibushak-LOGO.png" alt="">
+							<div class="col s9">
+								<h5 class="green-text ">Cambia tu contraseña</h5>
+							</div>
+						</div>
+						<div class="row">
+							<form>
+								<div class="row">
+									<div class="margin-none input-field col s6 offset-s3">
+										<input placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" id="password" type="password" class="margin-none validate">
+										<label for="password">Contraseña actual</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="margin-none input-field col s6 offset-s3">
+										<input placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" id="" type="password" class="margin-none validate">
+										<label for="password">Nueva contraseña</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="margin-none input-field col s6 offset-s3">
+										<input placeholder="&bull;&bull;&bull;&bull;&bull;&bull;" id="" type="password" class="margin-none validate">
+										<label for="password">Confirma contraseña</label>
+									</div>
+								</div>
+								<input class="buttons margin-none" type="submit" name="action"></input>
+							</form>
+						</div>
+				</div>
+			</div>
+				<!-- termina modal structure -->
+			</div>
+		</main>
+		<!-- footer -->
+		<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col l6 s12">
+							<p class="grey-text text-lighten-4">use rows and columns here to organize your footer content.</p>
+						</div>
+						<div class="col l4 offset-l2 s12">
+							<ul>
+								<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container center white-text">
+						<h6 class="margin-none">© 2018 Copyright <span><a class="" href="https://www.ibushak.com"> Ibushak</a></span></h6>
+					</div>
+				</div>
+			</footer>
+	 <!-- termina footer -->
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
+ </body>
 	</html>
