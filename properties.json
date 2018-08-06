@@ -1,7 +1,7 @@
 {
 	"address":"127.0.0.1",
-	"ports":["8080","8081","8082"],
-	"main_dir":"/home/marcosibushak/Sincronizador",
+	"ports":["8081"],
+	"main_dir":"C:\\Users\\Laura\\Desktop\\gitrepos\\Sincronizador",
 	"netsuite":{
 		"account":"4140678",
 		"email":"mauricio@ibushak.com",
@@ -11,7 +11,7 @@
 	"data_base":{
 		"host":"localhost",
 		"user":"root",
-		"password":"M@rcos23542",
-		"database_name":"Sincronizador"
+		"password":"ttgo702",
+		"database_name":"sincronizador"
 	}
 }

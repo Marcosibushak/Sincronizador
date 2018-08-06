@@ -9,7 +9,7 @@
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
 	  <link rel="stylesheet" href="/css/main.css">
-	  <title>Inicia sesión</title>
+	  <title>Inicia sesi&oacute;n</title>
 	</head>
 	<body>
     <div class="container">
@@ -25,19 +25,19 @@
 					 <div class="row">
  						<div class="input-field col s8 offset-s2">
  							<input placeholder="mail@ibushak.com" id="email" name="email" type="email" class="validate">
-           					<label class="black-text" for="email" data-error="wrong" data-success="right">Usuario</label>
+							<label class="black-text" for="email" data-error="correo no v&aacute;lido" data-success="correo v&aacute;lido">Usuario</label>
  						</div>
  					</div>
  					<div class="row">
  						<div class="input-field col s8 offset-s2">
  							<input placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" id="password" name="password" type="password" class="validate">
- 							<label class="black-text" for="password">Contrase&ntilde;a</label>
+ 							<label class="black-text" data-error="Contrase&ntilde;a incorrecta" for="password">Contrase&ntilde;a</label>
  						</div>
  					</div>
 					<input class="buttons center col offset-s5 gray" type="submit" name="action" value="Entrar">
 					<div class="row">
  				 	<div class="col s4 offset-s8">
- 				 		<a class="modal-trigger green-text" href="#modal2">Olvid&eacute mi contrase&ntilde;a</a>
+ 				 		<a class="modal-trigger green-text" href="#modal2">Olvid&eacute; mi contrase&ntilde;a</a>
  				 	</div>
  				 </div>
 				</form>
@@ -47,25 +47,19 @@
 				<div class="modal-content">
 					<div class="row valign-wrapper">
 						<div class="col s3"><img class="img-logo-modal" src="/images/ibushak-LOGO.png" alt=""></div>
-						<div class="col s9"><h4 class="green-text text-darken-2">Recupera tu contraseña</h4></div>
+						<div class="col s9"><h4 class="green-text text-darken-2">Recupera tu contrase&ntilde;a</h4></div>
 					</div>
 					<div class="row">
 						 <form id="forgot-form" class="col s8 offset-s2">
 							 <div class="input-field col s8 offset-s2">
 								 <input placeholder="mail@ibushak.com" id="email2" type="email" class="validate">
-								 <label id="forgot-label" class="black-text" for="email" data-error="Completa correctamente el campo con tu correo electrónico" data-success="right">Usuario</label>
+								 <label id="forgot-label" class="black-text" for="email" data-error="Completa correctamente el campo con tu correo electr&oacute;nico" data-success="Correo v&aacute;lido">Usuario</label>
 							 </div>
 							 <button id="forgot-btn" class="waves-effect waves-teal center col offset-s5 btn" type="submit" href="index.html" name="action">Enviar</button>
 						 </form>
 				 </div>
 				</div>
 			</div>
-
-
-
-
-
-
     </div>
 	  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
