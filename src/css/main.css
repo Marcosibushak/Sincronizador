@@ -101,3 +101,6 @@ footer{
 main{
   flex: 1 0 auto;
 }
+.select-dropdown{
+  border-bottom: none;
+}

@@ -7,10 +7,11 @@ $('.button-collapse').sideNav({
     }
   );
 
-// Inicialización de funciones (abrir modal y habilitar botón de submit)
+// Inicialización de funciones (abrir modal, select y habilitar botón de submit)
 $(document).ready(function(){
 // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
 $('.modal').modal();
+$('select').material_select();
 $("#forgot-btn").addClass("disabled");
 });
 $("#email2").on('change',function(){
