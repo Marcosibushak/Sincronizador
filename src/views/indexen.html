@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+	  <link rel="stylesheet" href="/css/main.css">
+	  <title>Sign in</title>
+	</head>
+	<body>
+    <div class="container">
+			<!-- logo principal -->
+      <div class="row">
+        <div class="col s4 offset-s4">
+          <img class="logo-login" src="/images/ibushak-LOGO.png" alt="">
+        </div>
+      </div>
+			<!-- form -->
+			<div class="row content-form-login">
+				 <form action="do_login" method="post" class="col s8 offset-s2 form-login">
+					 <div class="row">
+ 						<div class="input-field col s8 offset-s2">
+ 							<input placeholder="mail@ibushak.com" id="email" name="email" type="email" class="validate">
+							<label class="black-text" for="email" data-error="We don't recognize that email. Please try again." data-success="correo v&aacute;lido">User</label>
+ 						</div>
+ 					</div>
+ 					<div class="row">
+ 						<div class="input-field col s8 offset-s2">
+ 							<input placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" id="password" name="password" type="password" class="validate">
+ 							<label class="black-text" data-error="That's not the right password. Please try again" for="password">Password</label>
+ 						</div>
+ 					</div>
+					<input class="buttons btn white-text center col offset-s5" type="submit" name="action" value="Sign in">
+
+					<div class="row">
+ 				 	<div class="col s4 offset-s8">
+ 				 		<a class="modal-trigger green-text" href="#modal2">Forgot password?</a>
+ 				 	</div>
+ 				 </div>
+				 <a class="chip tooltipped margin-none" data-position="bottom" data-delay="10" data-tooltip="Ver en espa&ntilde;ol" href="!#"><img class="left" src="/images/mexico.png" alt="">Espa&ntilde;ol</a>
+			  </div>
+				</form>
+			</div>
+			<!-- Forgot Modal Structure -->
+			<div id="modal2" class="modal">
+				<div class="modal-content">
+					<div class="row valign-wrapper">
+						<div class="col s3"><img class="img-logo-modal" src="/images/ibushak-LOGO.png" alt=""></div>
+						<div class="col s9"><h4 class="green-text text-darken-2">FORGOT YOUR PASSWORD?</h4></div>
+					</div>
+					<div class="row">
+						 <form id="forgot-form" class="col s8 offset-s2">
+							 <div class="input-field col s8 offset-s2">
+								 <input placeholder="mail@ibushak.com" id="email2" type="email" class="validate">
+								 <label id="forgot-label" class="black-text" for="email" data-error="Invalid email address" data-success="Correo v&aacute;lido">Usuario</label>
+							 </div>
+							 <button id="forgot-btn" class="buttons white-text waves-effect waves-teal center col offset-s5 btn" type="submit" href="index.html" name="action">Reset password</button>
+						 </form>
+				 </div>
+				</div>
+			</div>
+    </div>
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+	</body>
+	</html>
