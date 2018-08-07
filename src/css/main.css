@@ -102,5 +102,5 @@ main{
   flex: 1 0 auto;
 }
 .select-dropdown{
-  border-bottom: none;
+  border-bottom: 0 !important;
 }
