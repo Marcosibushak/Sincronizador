@@ -61,6 +61,9 @@ class home(object):
     @cherrypy.expose
     def index(self):
         raise cherrypy.HTTPRedirect('https://www.ibushak.com/', status=301)
+    @cherrypy.expose
+    def test(self):
+        return open(main_dir+"/src/views/indexen.html")
 class api(object):
     @cherrypy.expose
     def index(self):
@@ -150,11 +153,11 @@ class syncer(object):
                 global db_user
                 global db_pass
                 global db_name
-                Usuario="""SELECT 
+                Usuario="""SELECT
                                 T1.razon_social_empresa,
                                 T3.correo_usuario,
                                 T2.nombre_rol
-                            FROM 
+                            FROM
                                 Sincronizador.server_empresas AS T1,
                                 Sincronizador.server_roles AS T2,
                                 Sincronizador.server_usuarios AS T3,
